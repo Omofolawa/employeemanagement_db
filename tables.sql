@@ -34,15 +34,20 @@ CREATE TABLE Salaries (
     SalaryID INT IDENTITY(1,1) PRIMARY KEY,
     EmployeeID INT,
     SalaryAmount DECIMAL(10, 2) NOT NULL,
-    SalaryDate DATE,
+    FromDate DATE,
     FOREIGN KEY (EmployeeID) REFERENCES Employees(EmployeeID)
 );
+
+--  Syntax to alter Salaries Table to include a ToDate
+ALTER TABLE Salaries
+ADD ToDate DATE NOT NULL DEFAULT '9999-12-31'; -- Setting a future date for periodic Salary review
+
 -- Insert validation data into Salaries
 INSERT INTO Salaries (EmployeeID, SalaryAmount, SalaryDate) VALUES 
-(1, 5000.00, '2023-01-31'),
-(2, 4500.00, '2023-01-31'),
-(3, 8000.00, '2023-01-31'),
-(4, 4000.00, '2023-01-31');
+(1, 50000.00, '2020-01-15'),
+(2, 45000.00, '2019-03-10'),
+(3, 80000.00, '2018-05-20'),
+(4, 40000.00, '2021-07-25');
 
 CREATE TABLE Attendance (
     AttendanceID INT IDENTITY(1,1) PRIMARY KEY,
