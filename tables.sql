@@ -39,10 +39,10 @@ CREATE TABLE Salaries (
 );
 -- Insert validation data into Salaries
 INSERT INTO Salaries (EmployeeID, SalaryAmount, SalaryDate) VALUES 
-(1, 5000.00, '2023-01-31'),
-(2, 4500.00, '2023-01-31'),
-(3, 8000.00, '2023-01-31'),
-(4, 4000.00, '2023-01-31');
+(1, 50000.00, '2020-01-15'),
+(2, 45000.00, '2019-03-10'),
+(3, 80000.00, '2018-05-20'),
+(4, 40000.00, '2021-07-25');
 
 CREATE TABLE Attendance (
     AttendanceID INT IDENTITY(1,1) PRIMARY KEY,
