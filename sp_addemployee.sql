@@ -45,3 +45,15 @@ BEGIN
         THROW;
     END CATCH;
 END;
+
+-- Use case of the sp AddEmployee
+
+EXEC AddEmployee 
+    @p_first_name = 'Simon',
+    @p_last_name = 'Berry',
+    @p_email = 'simon.berry@example.com',
+    @p_phone_number = '555-6789',
+    @p_date_of_birth = '1988-07-23',
+    @p_date_of_joining = '2024-06-01',
+    @p_salary = 6000.00,
+    @p_department_id = 2;
