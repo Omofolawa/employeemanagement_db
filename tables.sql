@@ -40,7 +40,7 @@ CREATE TABLE Salaries (
 
 --  Syntax to alter Salaries Table to include a ToDate
 ALTER TABLE Salaries
-ADD ToDate DATE NOT NULL DEFAULT '2027-12-31'; -- Setting a future date for periodic Salary review
+ADD ToDate DATE NOT NULL DEFAULT '9999-12-31'; -- Setting a future date for periodic Salary review
 
 -- Insert validation data into Salaries
 INSERT INTO Salaries (EmployeeID, SalaryAmount, SalaryDate) VALUES 
