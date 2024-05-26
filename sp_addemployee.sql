@@ -35,8 +35,8 @@ BEGIN
 		--(in this case, the newly inserted employee's ID) and assigns it to @emp_id.
         SET @emp_id = SCOPE_IDENTITY();
 
-        INSERT INTO Salaries (EmployeeID, SalaryAmount, SalaryDate)
-        VALUES (@emp_id, @p_salary, @p_date_of_joining);
+        INSERT INTO Salaries (EmployeeID, SalaryAmount, FromDate, ToDate)
+        VALUES (@emp_id, @p_salary, @p_date_of_joining, '9999-12-31');
 
         COMMIT TRANSACTION;
     END TRY
