@@ -10,12 +10,12 @@ BEGIN
 SELECT  
     e.EmployeeID AS Person_ID, 
     e.FirstName AS F_Name, 
-    e.LastName AS L_Name, 
-    e.DepartmentID AS Dept_ID, 
+    e.LastName AS L_Name,  
     e.DateOfBirth AS DOB, 
     e.DateOfJoining AS DOJ, 
     e.Email AS Email, 
     e.PhoneNumber AS Mobile,
+    e.DepartmentID AS Dept_ID,
     d.DepartmentName AS Dept_Name,
     s.SalaryAmount AS Take_Home_Pay,
 	s. FromDate AS Pay_Start
