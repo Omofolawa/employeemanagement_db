@@ -13,8 +13,8 @@ SELECT
 FROM Employees e
 JOIN Departments d ON e.DepartmentID = d.DepartmentID
 JOIN Salaries s ON e.EmployeeID = s.EmployeeID
-WHERE s.SalaryDate = (
-    SELECT MAX(SalaryDate)
+WHERE s.FromDate = (
+    SELECT MAX(FromDate)
     FROM Salaries
     WHERE EmployeeID = e.EmployeeID
 );
