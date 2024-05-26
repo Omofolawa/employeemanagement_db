@@ -26,3 +26,8 @@ WHERE e.EmployeeID = @p_employee_id
     AND s.ToDate = '9999-12-31'; -- This syntax Ensures it gets the current salary record
 END;
 GO
+
+-- USE CASE --
+-- Retrieve details for the employee with ID 3
+EXEC GetEmployeeDetails @p_employee_id = 3;
+
