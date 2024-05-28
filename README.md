@@ -1,9 +1,7 @@
 # employeemanagement_db
 The Employee Database is designed to manage and track information about departments, employees, salaries, attendance, and projects within an organization.
 
-Summary of the Employee Database
-
-The Employee Database is designed to manage and track information about departments, employees, salaries, attendance, and projects within an organization. The schema defines several entities and their relationships as follows:
+The schema defines several entities and their relationships as follows:
 
 Departments and Employees: Each department can have many employees, but each employee belongs to only one department.
 Employees and Salaries: Each employee can have multiple salary records over time, tracking changes in compensation.
